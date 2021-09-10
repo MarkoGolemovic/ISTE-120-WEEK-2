@@ -3,10 +3,10 @@
  */
 public class Student {
     //attributes
-    private String firstName="Pero";
-    private String lastName="Peric";
-    private int studentID=111;
-    private double GPA=222;
+    private String firstName;
+    private String lastName;
+    private int studentID;
+    private double GPA;
 
     //CONSTRUCTORS
     //default constructor
@@ -22,15 +22,17 @@ public class Student {
     //parameterized constructor, requires first and last name
 
     /**
-     *
-     * @param firstName
-     * @param lastName
+     * Parmetized constructor
+     * @param firstName is first name
+     * @param lastName is last name
+     * @param studentID is studen unix id
+     * @param GPA is student graid point average
      */
-    public Student(String firstName, String lastName){
+    public Student(String firstName, String lastName, int studentID, double GPA){
         this.firstName=firstName;
         this.lastName = lastName;
-        this.studentID=0;
-        this.GPA=0;
+        this.studentID= studentID;
+        this.GPA=GPA;
     }
 
     //getters and setters for firstName
@@ -39,14 +41,14 @@ public class Student {
     }
     /**
      *
-     * @return
+     * @return firstName
      */
     public String getFirstName(){
         return this.firstName;
     }
     /**
      *
-     * @param lastName
+     * @param lastName is represeting last name
      */
     public void setLastName(String lastName){
         this.lastName = lastName;
