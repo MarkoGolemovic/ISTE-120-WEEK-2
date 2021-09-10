@@ -1,4 +1,5 @@
 /**
+ * @author Marko Golemovic
  * @since 9-10-2021
  */
 public class Student {
@@ -41,7 +42,7 @@ public class Student {
     }
     /**
      *
-     * @return firstName
+     * @return firstName is represiting first
      */
     public String getFirstName(){
         return this.firstName;
